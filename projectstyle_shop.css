@@ -1,0 +1,166 @@
+.fredoka{
+  font-family: "Fredoka", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Fredoka", system-ui;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+.hero{
+	width: 100%;
+	height: 15vh;
+	position: relative;
+}
+.navbar{
+	width: 100%;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 15px;
+}
+.navbar img{
+	width: auto;
+	height: 60px;
+}
+ul{
+	display: flex;
+	justify-content: flex-end;
+	margin-left: auto;
+	list-style: none;
+}
+ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 25px;
+	position: relative;
+}
+ul li a{
+	text-decoration: none;
+	color: #39453b;
+	padding: 0 10px;
+	font-weight: 300;
+	position: relative;
+}
+ul li a::after{
+	content: '';
+	width: 0;
+	height: 3.2px;
+	background: #849c8a;
+	position: absolute;
+	left: 50%;
+	bottom: -5px;
+	transform: translateX(-50%);
+	transition: width 0.3s ease-in-out;
+}
+ul li a:hover::after{
+	width: 100%;
+}
+.navbar-icons img{
+	height: 25px;
+	margin-left: 30px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+.head h1{
+	font-weight: 500;
+	text-align: center;
+	height: 15vh;
+	font-size: 50px;
+	color: #29302c;
+}
+.oprod h2, .cprod h2, .mprod h2{
+	font-weight: 400;
+	text-align: center;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	color: #333d37;
+}
+.image-grid{
+	width: 100%;
+	padding: 60px;
+}
+.oprod, .cprod, .mprod{
+	text-align: center;
+	margin-bottom: 170px;
+}
+.oprod h2, .cprod h2, .mprod h2{
+	margin-bottom: 30px;
+}
+.oprod div, .cprod div, .mprod div{
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+}
+.oprod div .image-item, .cprod div .image-item, .mprod div .image-item{
+  flex: 1;
+  text-align: center;
+}
+.image-item img{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+	border-radius: 10px;
+	width: 100%;
+	max-width: 380px;
+	height: auto;
+	transition: transform 0.1s ease-in-out;
+}
+.image-item img:hover{
+	transform: scale(1.1);
+}
+.image-item p{
+	font-weight: 400;
+	margin-top: -70px;
+}
+.image-item{
+	flex: 1;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.refn p{
+	color: #285c39;
+	text-align: center;
+	font-size: 23px;
+	position: relative;
+	transition: 0.3s ease-in-out;
+}
+.refn p:hover{
+	color: #ebf5ee;
+	text-shadow: 	0px 0px 2.3px #000;
+}
+.refn a{
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

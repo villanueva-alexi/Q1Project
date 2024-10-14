@@ -1,0 +1,140 @@
+.fredoka{
+  font-family: "Fredoka", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Fredoka", system-ui;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+.hero{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.navbar{
+	width: 100%;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 15px;
+}
+.navbar img{
+	width: auto;
+	height: 60px;
+}
+ul{
+	display: flex;
+	justify-content: flex-end;
+	margin-left: auto;
+	list-style: none;
+}
+ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 25px;
+	position: relative;
+}
+ul li a{
+	text-decoration: none;
+	color: #39453b;
+	padding: 0 10px;
+	font-weight: 300;
+	position: relative;
+}
+ul li a::after{
+	content: '';
+	width: 0;
+	height: 3.2px;
+	background: #849c8a;
+	position: absolute;
+	left: 50%;
+	bottom: -5px;
+	transform: translateX(-50%);
+	transition: width 0.3s ease-in-out;
+}
+ul li a:hover::after{
+	width: 100%;
+}
+.navbar-icons img{
+	height: 25px;
+	margin-left: 30px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+.banner{
+	display: flex;
+}
+.left-column, .right-column{
+	flex-basis: 50%;
+}
+.right-column img{
+	margin-top: 130px;
+	margin-left: 190px;
+	width: 100%;
+	max-width: 500px;
+	opacity: 80%;
+}
+.left-column h1{
+	margin-top: 200px;
+	margin-left: 80px;
+	font-size: 80px;
+	font-weight: 500;
+	color: #39453b;
+}
+.left-column h3{
+	margin-left: 80px;
+	font-size: 34px;
+	font-weight: 400;
+	color: #849c8a;
+}
+.left-column p{
+	margin-top: 40px;
+	padding: 20px;
+	margin-left: 67px;
+	font-size: 18px;
+	font-weight: 300;
+	color: #39453b;
+}
+.btn button{
+	padding: 7px 30px;
+	margin-top: 55px;
+	margin-left: 80px;
+	margin-right: 11px;
+	outline: none;
+	border: 1px solid #849c8a;
+	border-radius: 20px;
+	cursor: pointer;
+	color: #849c8a;
+	background: transparent;
+}
+.btn .primary-btn{
+	background: linear-gradient(#8ba395, #acbfb4);
+	color: white;
+	font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
